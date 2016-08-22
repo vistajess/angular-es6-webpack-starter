@@ -1,0 +1,103 @@
+@import url("http://getbootstrap.com/dist/css/bootstrap.css");
+@import url("https://npmcdn.com/angular-toastr/dist/angular-toastr.css");
+/* Border-radius */
+/* Fonts */
+@font-face {
+  font-family: 'AvenirBook';
+  src: url("../src/assets/css/fonts/fonts/AvenirLTStd-Book.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'AvenirBookMedium';
+  src: url("../src/assets/css/fonts/fonts/AvenirLTStd-Medium.otf") format("opentype"); }
+
+/* Components */
+.button {
+  display: inline-block;
+  padding: 0 40px;
+  height: 45px;
+  line-height: 1;
+  font-size: 18px;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.3s all;
+  outline: none;
+  font-weight: normal;
+  width: 330px; }
+  .button.button--round--primary {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background: url("../src/assets/images/add_btn.svg"); }
+  .button.button--primary {
+    background: #FF8225;
+    color: #fff; }
+    .button.button--primary:hover {
+      background: #fff;
+      border: 1px solid #FF8225;
+      color: #FF8225; }
+  .button.button--inverted-primary {
+    background: #fff;
+    color: #FF8225;
+    border: 1px solid #FF8225; }
+    .button.button--inverted-primary:hover {
+      background: #FF8225;
+      border: 1px solid #fff;
+      color: #fff; }
+  .button.button--link {
+    padding: 11px 26px !important; }
+  .button.button--block {
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+  .button.button--transparent {
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent; }
+    .button.button--transparent:hover {
+      background: #fff;
+      border: 1px solid #C2C2C2;
+      color: #C2C2C2; }
+  .button.button--normal {
+    width: 175px;
+    padding: 0px 26px; }
+
+.input {
+  border: 0px;
+  border-bottom: 1px solid #E3E3E3;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px 0px;
+  height: 36px;
+  font-size: 18px; }
+
+.input--primary {
+  border: 1px solid #E3E3E3;
+  height: 40px;
+  border-radius: 0;
+  font-size: 18px; }
+
+/*Modules */
+.LoginModule {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url("../src/assets/images/Login_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex; }
+  .LoginModule > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .LoginModule .LoginWrapper {
+    font-family: 'AvenirBook';
+    width: 460px;
+    padding: 55px;
+    background: #fff;
+    border-radius: 5px; }
+  .LoginModule .Login-logo {
+    margin-bottom: 50px; }

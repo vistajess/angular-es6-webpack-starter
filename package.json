@@ -1,0 +1,53 @@
+{
+  "name": "dibz-dashboard",
+  "version": "1.0.0",
+  "description": "Official Web Dashboard for the Dibz Parking App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server",
+    "build:style": "node-sass src/assets/css/styles.scss -o build",
+    "watch:style": "npm run build:style && chokidar 'src/assets/css/**/*.scss' -c 'node-sass src/assets/css/styles.scss -o build' --polling",
+    "start": "webpack -d -v -w --display-error-details"
+  },
+  "author": "Vista, Jesus @github.com/vistajess",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "aws-sdk": "^2.2.30",
+    "babel": "^6.1.5",
+    "babel-core": "^6.1.4",
+    "babel-loader": "^6.1.0",
+    "babel-plugin-module-alias": "^1.2.0",
+    "babel-plugin-transform-class-properties": "^6.4.0",
+    "babel-plugin-transform-inline-environment-variables": "^6.3.13",
+    "babel-plugin-transform-object-rest-spread": "^6.3.13",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "chai": "^3.4.1",
+    "chalk": "^1.1.1",
+    "chokidar": "^1.6.0",
+    "chokidar-cli": "^1.2.0",
+    "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^2.22.0",
+    "imports-loader": "^0.6.5",
+    "mocha": "^2.3.4",
+    "ng-annotate-loader": "^0.1.1",
+    "node-sass": "^3.8.0",
+    "stringify-object-values": "^0.1.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.12.4",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.3.1",
+    "babel": "^6.5.2",
+    "babel-plugin-module-alias": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "chokidar": "^1.6.0",
+    "css-loader": "^0.23.1",
+    "html-loader": "^0.4.3",
+    "stylus-loader": "^2.1.1"
+  }
+}

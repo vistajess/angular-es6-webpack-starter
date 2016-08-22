@@ -1,0 +1,77 @@
+.button {
+  display: inline-block;
+  padding: 0 40px;
+  height: 45px;
+  line-height: 1;
+  font-size: $fontSize-h5;
+  border: 1px solid transparent;
+  border-radius: $borderRadius-rounded;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.3s all;
+  outline: none;
+  font-weight: normal;
+  width: 330px;
+
+  &.button--round--primary {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background: url('../src/assets/images/add_btn.svg');
+  }
+
+
+  &.button--primary {
+    background: $brand-primary;
+    color: $brand-white;
+
+    &:hover {
+      background: $brand-white;
+      border: 1px solid $brand-primary;
+      color: $brand-primary;
+    }
+  }
+
+  &.button--inverted-primary {
+    background: $brand-white;
+    color: $brand-primary;
+    border: 1px solid $brand-primary;
+
+    &:hover {
+      background: $brand-primary;
+      border: 1px solid $brand-white;
+      color: $brand-white;
+    }
+  }
+
+  &.button--link {
+    padding: 11px 26px !important;
+  }
+
+
+  &.button--block {
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  &.button--transparent {
+    border: 1px solid $brand-white;
+    color: $brand-white;
+    background: transparent;
+
+    &:hover {
+      background: $brand-white;
+      border: 1px solid $brand-gray;
+      color: $brand-gray;
+    }
+  }
+
+  &.button--normal {
+    width: 175px;
+    padding: 0px 26px;
+  }
+}

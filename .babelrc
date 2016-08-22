@@ -1,0 +1,11 @@
+{
+  "presets": ["es2015", "react"],
+  "plugins": [
+    "transform-inline-environment-variables",
+    "transform-object-rest-spread",
+    "transform-class-properties",
+    ["babel-plugin-module-alias", [
+      { "src": "./src/app", "expose": "app" }
+    ]]
+  ]
+}

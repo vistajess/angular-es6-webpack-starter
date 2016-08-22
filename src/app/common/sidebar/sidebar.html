@@ -1,0 +1,35 @@
+<section class="Sidebar">
+  <ul>
+    <li class="Sidebar-links Sidebar-logo">
+      <a ui-sref="dashboard.home">
+        <img class="center-block" ng-src="src/assets/images/dibz_Logo_dashboard.svg">
+      </a>
+    </li>
+    <li class="Sidebar-links Sidebar-profile">
+      <div class="center-block">
+        <img ng-src="http://placehold.it/90x90"
+             class="Sidebar-avatar">
+        <!-- <div class="Sidebar-avatar"></div> -->
+        <h5 class="Sidebar-name">{{$ctrl.viewName}}</h5>
+      </div>
+    </li>
+    <li class="Sidebar-links" ui-sref-active="Sidebar-links--active">
+      <a ui-sref="dashboard.garage-owner"><i class="icon icon-owner"></i> Owner</a>
+    </li>
+    <li class="Sidebar-links" ui-sref-active="Sidebar-links--active">
+      <a ui-sref="dashboard.garage"> <i class="icon icon-garage"></i> Garage</a>
+    </li>
+    <li class="Sidebar-links" ui-sref-active="Sidebar-links--active">
+      <a ui-sref="dashboard.appuser"> <i class="icon icon-appuser"></i> App Users</a>
+    </li>
+    <li class="Sidebar-links" ui-sref-active="Sidebar-links--active">
+      <a ui-sref="dashboard.admin-user"> <i class="icon icon-adminuser"></i> Admin Users</a>
+    </li>
+    <li class="Sidebar-links">
+      <a ui-sref="dashboard.rewards"> <i class="icon icon-rewards"></i> Rewards</a>
+    </li>
+     <li class="Sidebar-links">
+      <a href=""> <i class="icon icon-reports"></i> Reports</a>
+    </li>   
+  </ul>
+</section>

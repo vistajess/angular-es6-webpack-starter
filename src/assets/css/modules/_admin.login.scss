@@ -1,0 +1,27 @@
+.LoginModule {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url('../src/assets/images/Login_bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+
+  > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .LoginWrapper {
+    font-family: 'AvenirBook';
+    width: 460px;
+    padding: 55px;
+    background: $brand-white;
+    border-radius: $borderRadius-base;
+  }
+  
+  .Login-logo {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,37 @@
+<section class="LoginModule">
+  <div class="container">
+    <div class="LoginWrapper">
+      <form ng-submit="$ctrl.login()">
+        <div>
+          <h3 class="text-center">Login Form</h3><br><br>
+          <div class="form-group text-center">
+            <input type="text" 
+                class="form-control input"
+                ng-model="$ctrl.email"
+                required 
+                placeholder="Email">
+          </div>
+          <div class="form-group text-center">
+            <input type="password" 
+                class="form-control input"
+                ng-model="$ctrl.password"
+                required 
+                placeholder="Password">
+          </div>
+          <div ng-show="$ctrl.errorMessage" class="alert alert-warning">
+            {{$ctrl.errorMessage}}
+          </div>
+          <div class="form-group">
+            <button type="submit"
+                 class="button button--primary button--block">
+                  Login
+            </button>
+          </div>
+          <div class="form-group">
+            <a href="" class="text-center">Forgot Password</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
