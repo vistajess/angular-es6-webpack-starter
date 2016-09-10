@@ -1,5 +1,5 @@
 @import url("http://getbootstrap.com/dist/css/bootstrap.css");
-@import url("https://npmcdn.com/angular-toastr/dist/angular-toastr.css");
+@import url("https://unpkg.com/angular-toastr/dist/angular-toastr.css");
 /* Border-radius */
 /* Fonts */
 @font-face {
